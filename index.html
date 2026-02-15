@@ -8,9 +8,16 @@
         <link rel="stylesheet" href="assets/fontawesome/css/all.min.css"/>
         <script defer src="https://cloud.umami.is/script.js" data-website-id="6845ead6-058a-4595-981d-70e00813bd97"></script>
         <style>
+            html {
+                scroll-behavior: smooth !important;
+            }
             @font-face {
                 font-family: Canto;
                 src: url("/assets/fonts/Canto-Light.woff2") format("woff2");
+            }
+            @font-face {
+                font-family: Cinzel;
+                src: url("/assets/fonts/Cinzel-Regular.woff2") format("woff2");
             }
         </style>
     </head>
@@ -20,31 +27,38 @@
             <div class="bg-[url(assets/concepts/screenshots/caspar/caspar_3.png)] bg-cover sticky top-0 h-screen flex flex-col items-center justify-center">
                 <img class="w-32 md:w-48 lg:w-64" src="assets/branding/icons/crimson_lune_MUST_FIX.svg"/>
                 <img class="w-3/4" src="assets/branding/crimson_lune/crimson_lune_txt_only.svg"/>
+                <img onclick="window.scrollBy(0, window.innerHeight)" class="animate-pulse size-20 m-10" src="assets/misc/down.svg"/>
+                <!--
                 <div class="text-6xl text-white pt-12">
                     <i class="fa-solid fa-angles-down animate-pulse"></i>
                 </div>
+                -->
             </div>
             <!-- MIRRORS REALM -->
             <div class="bg-black sticky top-0 h-screen flex flex-col-reverse md:flex-row text-white">
                 <div class="bg-[url(assets/concepts/art/caspar/caspar_1.png)] bg-top-center bg-cover h-screen flex-grow"></div>
-                <div class="flex flex-col md:flex-row w-screen md:w-2/3 bg-black text-white items-center justify-around">
-                    <div class="grow p-20">
-                        <h1 style="font-family: Canto" class="text-6xl font-thin tracking-widest">Journey to Miras</h1>
-                        <h2 style="font-family: Canto" class="text-4xl font-thin pt-5 tracking-widest">A land of intrigue, secrets, and shadows...</h2>
+                <div class="w-screen lg:w-2/3 bg-black text-white">
+                    <div class="p-20 flex flex-col h-screen justify-center">
+                        <h1 style="font-family: Canto" class="text-4xl md:text-6xl font-thin tracking-widest">Journey to Miras</h1>
+                        <h2 style="font-family: Canto" class="text-2xl md:text-4xl font-thin pt-5 tracking-widest">A land of intrigue, secrets, and shadows...</h2>
                         <p class="italic pt-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis leo lectus, nec ultrices justo condimentum sed. Vestibulum tincidunt turpis non tempor luctus.
+                            Zach, please figure out a tagline to promote that this is a franchise.
                         </p>
-                        <img class="max-w-[300px] pt-10" src="assets/misc/sun-white.svg"/>
-                        <div class="relative inline-flex group mt-10 min-w-[175px]">
-                            <a href="https://store.steampowered.com/app/3990200/Crimson_Tower/" title="Steam" class="relative inline-flex items-center justify-center px-6 py-4 text-2xl text-white transition-all duration-200 bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-md min-w-[175px] border" role="button">
-                            Enter the Mirrors Realm...
-                            </a>
+                        <div class="flex flex-col md:flex-row items-center md:items-end justify-around">
+                            <div>
+                                <img class="max-w-0 md:max-w-[300px] md:pt-10" src="assets/misc/sun-white.svg"/>
+                                <div class="relative inline-flex group mt-10 min-w-[175px]">
+                                    <a href="https://www.mirrorsrealm.com/" title="Mirrors Realm" class="relative inline-flex items-center justify-center px-6 py-4 text-sm md:text-2xl text-white transition-all duration-200 bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-md min-w-[175px] border" role="button">
+                                        Enter the Mirrors Realm...
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a href="assets/concepts/mirrors_map.png">
+                                    <img class="max-w-[300px] md:max-w-[500px] m-10" src="assets/concepts/mirrors_map.png"/>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-20">
-                        <a href="assets/concepts/mirrors_map.png">
-                            <img class="max-w-[750px]" src="assets/concepts/mirrors_map.png"/>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -60,10 +74,10 @@
                     All this will be revealed in the first title of the Mirrors story, brought to you by Crimson Lune studios.
                 </p>
                 <h2 style="font-family: Canto" class="text-4xl font-thin pt-10 tracking-widest">Coming Soon</h2> 
-                <div class="relative inline-flex group m-10 min-w-[175px]">
+                <div style="font-family: Cinzel" class="relative inline-flex group m-10 min-w-[175px]">
                     <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-white blur-xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt min-w-[175px]"></div>
                     <a href="https://store.steampowered.com/app/3990200/Crimson_Tower/" title="Steam" class="relative inline-flex items-center justify-center px-6 py-4 text-2xl text-white transition-all duration-200 bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-md min-w-[175px]" role="button">
-                        <i class="fa-brands fa-steam"></i> &nbsp; Steam
+                        <i class="fa-brands fa-steam"></i> &nbsp; STEAM
                     </a>
                 </div>            
             </div>
@@ -73,7 +87,7 @@
             <div class="text-center">
                 <div class="relative inline-flex group mt-10 min-w-[175px]">
                     <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-white blur-xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-                    <a href="https://store.steampowered.com/app/3990200/Crimson_Tower/" title="Steam" class="relative inline-flex items-center justify-center px-6 py-4 text-2xl text-white transition-all duration-200 bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-md min-w-[175px]" role="button">
+                    <a href="discord.crimsonlune.ca" title="Discord" class="relative inline-flex items-center justify-center px-6 py-4 text-2xl text-white transition-all duration-200 bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-md min-w-[175px]" role="button">
                         <i class="fa-brands fa-discord"></i> &nbsp; Discord
                     </a>
                 </div>
@@ -83,7 +97,7 @@
             <div class="text-center">
                 <div class="relative inline-flex group mt-10 min-w-[175px]">
                     <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-white blur-xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-                    <a href="https://store.steampowered.com/app/3990200/Crimson_Tower/" title="Steam" class="relative inline-flex items-center justify-center px-6 py-4 text-2xl text-white transition-all duration-200 bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-md min-w-[175px]" role="button">
+                    <a href="https://www.patreon.com/CrimsonLune" title="Patreon" class="relative inline-flex items-center justify-center px-6 py-4 text-2xl text-white transition-all duration-200 bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-md min-w-[175px]" role="button">
                         <i class="fa-brands fa-patreon"></i> &nbsp; Patreon
                     </a>
                 </div>
